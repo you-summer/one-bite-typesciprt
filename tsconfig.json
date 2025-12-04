@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "ESNext", // 자바스크립트의 최신버전
+    "module": "esnext",
+    "outDir": "dist",
+    "strict": true, //엄격한 타입검사
+    "moduleDetection": "force",
+    "skipLibCheck": true
+  },
+  "include": ["src"] // 컴파일할 범위를 알려줌
+}
