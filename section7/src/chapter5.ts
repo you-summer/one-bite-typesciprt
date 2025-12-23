@@ -16,32 +16,3 @@ promise.then((response) => {
 promise.catch((err) => {
   console.log(err);
 });
-
-/**
- * 프로미스를 반환하는 함수의 타입을 정의
- */
-
-interface Post {
-  id: number;
-  title: string;
-  content: string;
-}
-
-function fetchPost(): Promise<Post> {
-  return new Promise((resolve, reject) => {
-    setTimeout(() => {
-      resolve({
-        id: 1,
-        title: "제목",
-        content: "컨텐츠",
-      });
-    }, 3000);
-  });
-}
-
-const postRequest = fetchPost();
-
-postRequest.then((post) => {
-  post.id;
-  console.log(post);
-});
