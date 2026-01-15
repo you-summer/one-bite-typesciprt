@@ -1,0 +1,13 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "esnext",
+    "outDir": "dist",
+    "strict": true,
+    "moduleDetection": "force", //개별모듈취급
+    "skipLibCheck": true,
+    "allowJs": true
+    // "strictNullChecks": false //엄격한 null 검사
+  },
+  "include": ["src"] // tsc 할때만 인식
+}
